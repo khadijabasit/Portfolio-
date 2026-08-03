@@ -1,0 +1,163 @@
+/* ===== Identity Kit tokens ===== */
+:root {
+  --navy: #2C4A78;
+  --near-black: #1A1A1A;
+  --off-white: #F8F7F4;
+  --salmon: #DB7B7B;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--off-white);
+  color: var(--near-black);
+  font-family: 'Karla', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Zilla Slab', serif;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+a { color: var(--navy); }
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== Header / nav ===== */
+header {
+  border-bottom: 1px solid rgba(26,26,26,0.08);
+  background: var(--off-white);
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: 'Zilla Slab', serif;
+  font-weight: 700;
+  color: var(--near-black);
+  font-size: 1.1rem;
+}
+
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, var(--navy) 50%, var(--salmon) 50%);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.logo-mark::after {
+  content: "KB";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--near-black);
+  font-size: 0.95rem;
+}
+
+nav a.active, nav a:hover {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+/* ===== Hero ===== */
+.hero {
+  padding: 64px 0 40px;
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  max-width: 14ch;
+}
+
+.hero p.claim {
+  font-size: 1.15rem;
+  max-width: 46ch;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: var(--salmon);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.cta-button:hover { background: var(--navy); }
+
+/* ===== Sections ===== */
+section {
+  padding: 40px 0;
+}
+
+section + section {
+  border-top: 1px solid rgba(26,26,26,0.08);
+}
+
+.channel-card {
+  background: #fff;
+  border-left: 4px solid var(--salmon);
+  padding: 18px 22px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.channel-card h3 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.channel-meta {
+  font-size: 0.9rem;
+  color: var(--navy);
+  font-weight: 700;
+  margin: 6px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 24px;
+  font-size: 0.85rem;
+  color: rgba(26,26,26,0.6);
+}
+
